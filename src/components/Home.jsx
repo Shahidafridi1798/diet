@@ -14,7 +14,7 @@ export default function Home() {
     <Typography>
     <h1 className="header">Welcome to the World of Diet Suggestions App.</h1>
     <h2>Our Food should be our medicine and our medicine should be our food.</h2>
-    <img height={"400px"} width="50%" src="https://media4.giphy.com/media/AhBCsCLbse7xS/giphy.gif" />
+    <img height={"400px"} width="50%" src="https://media4.giphy.com/media/AhBCsCLbse7xS/giphy.gif" alt="diet"/>
 </Typography>
 <footer>
   <h1>
