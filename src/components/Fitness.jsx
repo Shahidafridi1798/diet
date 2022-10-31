@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import { IconButton } from "@mui/material";
-import Box from "@mui/joy/Box";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
-import { useState, UseEffect } from "react";
+import { useState } from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
@@ -12,8 +10,8 @@ const Fitness = () => {
   const [meals, setMeals] = useState([]);
   const [mealName, setMealName] = useState("");
   const [calories, setCalories] = useState(0);
-  const [openModal, setOpenModal] = useState(false);
-  const [selectedFilter, setSelectedFilter] = useState();
+  // const [openModal, setOpenModal] = useState(false);
+  // const [selectedFilter, setSelectedFilter] = useState();
 
   const addMealsHandler = () => {
     const oldMeals = meals ? [...meals] : [];
@@ -50,17 +48,17 @@ useEffect(() => {
 }, [setMeals]);
 
 
-useEffect(() => {
-  const oldState = [...meals];
-  if(selectedFilter === "Ascending"){ 
-   const ascendingMeals = oldState.sort((a,b) => a.calories - b.calories);
-   setMeals(ascendingMeals);
-  }
-  else if(selectedFilter === "Descending"){
-    const descendingMeals = oldState.sort((a,b) => b.calories - a.calories);
-    setMeals(descendingMeals)
-  }
-}, [selectedFilter]);
+// useEffect(() => {
+//   const oldState = [...meals];
+//   if(selectedFilter === "Ascending"){ 
+//    const ascendingMeals = oldState.sort((a,b) => a.calories - b.calories);
+//    setMeals(ascendingMeals);
+//   }
+//   else if(selectedFilter === "Descending"){
+//     const descendingMeals = oldState.sort((a,b) => b.calories - a.calories);
+//     setMeals(descendingMeals)
+//   }
+// }, [selectedFilter]);
 
   return (
     <div>
@@ -175,25 +173,12 @@ const MealsList = ({ meals, deleteMealHandler }) => {
   );
 };
 
-const Modal = ({setOpenModal}) => {
-  return (
-    <div className="modal">
-      <h3>Calories Must Be Bigger Than 0 And Meal Name Cannot Be Blank</h3>
-      <Button onClick={() => setOpenModal(false)}>Close</Button>
-    </div>
-  )
-}
+// const Modal = ({setOpenModal}) => {
+//   return (
+//     <div className="modal">
+//       <h3>Calories Must Be Bigger Than 0 And Meal Name Cannot Be Blank</h3>
+//       <Button onClick={() => setOpenModal(false)}>Close</Button>
+//     </div>
+//   )
+// }
 
-const MealsFilter = ({selectedFilter, setSelectedFilter}) => {
-  return (
-    <div className="filter_container_select">
-     <select defaultValue={selectedFilter}
-     onChange={(e) => setSelectedFilter(e.target.value)}
-     >
-      <option value=""></option>
-      <option value="Ascending">Ascending</option>
-      <option value="Descending">Descending</option>
-     </select>
-    </div>
-  )
-}

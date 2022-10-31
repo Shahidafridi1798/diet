@@ -11,7 +11,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useEffect, useState } from "react";
 import Badge from '@mui/material/Badge';
 import { useNavigate } from "react-router-dom";
@@ -19,7 +18,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import { NotFoundPage } from './NotFoundPage';
 
 
-export function ProductList({}){
+export function ProductList(){
   const INTIAL_PRODUCT_LIST = [
     {
       "id": "100",
