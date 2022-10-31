@@ -4,7 +4,7 @@ import Sheet from '@mui/joy/Sheet';
 import Typography from '@mui/joy/Typography';
 import TextField from '@mui/joy/TextField';
 import Button from '@mui/joy/Button';
-import Link from '@mui/joy/Link';
+import { Link } from 'react-router-dom';
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { useNavigate } from 'react-router-dom';
@@ -86,7 +86,7 @@ export function Login() {
           {formik.touched.password && formik.errors.password? formik.errors.password : '' }
           <Button sx={{ mt: 1 /* margin top */ }} onClick={() => navigate("/Home")}>Log in</Button>
           <Typography
-            endDecorator={<Link href="/Signup">Sign up</Link>}
+            endDecorator={<Link to="/Signup">Sign up</Link>}
             fontSize="sm"
             sx={{ alignSelf: 'center' }}
           >

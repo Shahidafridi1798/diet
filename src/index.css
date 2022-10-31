@@ -77,14 +77,14 @@
  
 }
 .b{
-  background-image: url(https://images.everydayhealth.com/images/what-is-the-dash-diet-1440x810.jpg);
+  /* background-image: url(https://images.everydayhealth.com/images/what-is-the-dash-diet-1440x810.jpg); */
   text-align: center;
   padding-top: 65px;
   font-style: sans-sherif 400;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
-  height: 700px;
+  /* height: 700px; */
   width: 100%;
 }
 .log{
@@ -113,11 +113,11 @@
 }
 
 .btn{
-  left: 56%;
+  left: 63%;
 }
 
 .btnn{
-left: 740px;
+left: 830px;
 }
 
 .control{

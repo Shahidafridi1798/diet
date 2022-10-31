@@ -49,12 +49,12 @@ export default function App() {
                 color="inherit"
                 onClick={() => navigate("/CalorieTracker")}
               >
-                Calorie Tracker
+              Tracker
               </Button>
               {/* <Button color="inherit" 
   onClick={() => navigate("/Products/add")}>Add-Product</Button> */}
               <Button color="inherit" onClick={() => navigate("/MealPlanner")}>
-                Meal Planner
+                Planner
               </Button>
 
               <Button
