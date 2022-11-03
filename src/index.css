@@ -154,14 +154,17 @@ left: 830px;
 }
 
 .meals_container_wrapper{
-  display: block;
-  border: 1px solid black;
-  text-align: center;
+  display: flex;
+ justify-items: center;
+  align-items: center;
+ gap: 10px;
+  flex-direction: column;
 }
 
 .meal_container_wrapper_inner{
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   align-items: center;
   justify-content: space-between;
+  width: 50%;
 }
