@@ -41,21 +41,21 @@ export default function App() {
             <Toolbar>
               <Button color="inherit" onClick={() => navigate("/Home")}>
                 Home
-              </Button>
+              </Button> <br />
               <Button color="inherit" onClick={() => navigate("/Products")}>
                 Products
-              </Button>
+              </Button> <br />
               <Button
                 color="inherit"
                 onClick={() => navigate("/CalorieTracker")}
               >
               Tracker
-              </Button>
+              </Button> <br />
               {/* <Button color="inherit" 
   onClick={() => navigate("/Products/add")}>Add-Product</Button> */}
               <Button color="inherit" onClick={() => navigate("/MealPlanner")}>
                 Planner
-              </Button>
+              </Button> <br />
 
               <Button
                 className="btn"
@@ -76,7 +76,7 @@ export default function App() {
                       navigate("/Home");
                     }}
                     sx={{ p: 0 }}
-                  >
+                  > <br />
                     <Avatar
                       alt="Remy Sharp"
                       src="https://i.pinimg.com/736x/f8/2f/ba/f82fbac7514f944aacc0257445c1f89e.jpg"
@@ -133,7 +133,7 @@ export default function App() {
 
             <Route path="/404" element={<NotFoundPage />} />
             <Route path="*" element={<Navigate replace to="/404" />} />
-            <Route path="/*" element={<Navigate replace to="/404" />} />
+            
           </Routes>
         </div>
       </Paper>

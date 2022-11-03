@@ -152,3 +152,16 @@ left: 830px;
   gap: 10px;
   margin-bottom: 10px;
 }
+
+.meals_container_wrapper{
+  display: block;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.meal_container_wrapper_inner{
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+}
